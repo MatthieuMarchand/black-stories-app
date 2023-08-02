@@ -1,0 +1,41 @@
+h1#title {
+    color: $white;
+    font-family: 'Tanker-Regular';
+    font-size: 42px;
+    span:nth-of-type(1) {
+        font-size: 16px;
+    }
+    span:nth-of-type(2) {
+        color: #C92525;
+    }
+}
+
+input#search {
+    box-sizing: border-box;
+    width: 100%;
+    height: 36px;
+    padding: 0;
+    padding-left: 43px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+#searchContainer {
+    position: relative;
+    margin-top: 30px;
+    img {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 18px;
+        height: 18px;
+    }
+}
+
+#stories {
+    h2 {
+        margin-bottom: 20px;
+    }
+}

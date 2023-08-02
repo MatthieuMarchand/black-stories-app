@@ -1,0 +1,19 @@
+// ! colors
+$black: #000;
+$white: #FFFAFA;
+$red: #BA332B;
+$orange: #CB433B;
+$red-bright: #FF4439;
+$background-body: linear-gradient(to bottom, #590000, #390909);
+$background-cards-closed: linear-gradient(to right, #E5564E, #AF241C);
+
+// ! fonts
+@font-face {
+    font-family: 'Tanker-Regular';
+    src: url('/fonts/TANKER/Tanker-Regular.woff2') format('woff2'),
+        url('/fonts/TANKER/Tanker-Regular.woff') format('woff'),
+        url('/fonts/TANKER/Tanker-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}

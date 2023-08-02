@@ -1,0 +1,52 @@
+* { //! A changer
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: $background-body;
+}
+
+#blackFilter {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .3);
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+main {
+    box-sizing: border-box;
+    width: 100vw;
+    max-width: 500px;
+    min-height: 100vh;
+    padding: 30px;
+    // border: solid 1px white;
+}
+
+h2 {
+    color: $white;
+    font-family: 'Tanker-Regular';
+    font-size: 36px;
+}
+
+button {
+    width: 97px;
+    height: 36px;
+    border-radius: 42px;
+    font-size: 14;
+    background: $red-bright;
+    border: none;
+    box-shadow: 0 0 10px rgba($color: #571515, $alpha: .33);
+}
+
+// ! import scss pages
+@import 'index/index';
+@import 'index/cards';
