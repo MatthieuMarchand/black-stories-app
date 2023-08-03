@@ -10,6 +10,7 @@
 </head>
 <body>
     <div id="blackFilter"></div>
+    <div id="background"></div>
     <main id="main">
         <header>
             <h1 id="title">
@@ -21,8 +22,14 @@
                 <input id="search" type="text" placeholder="search for a story...">
                 <img src="/images/search.svg" alt="search">
             </div>
+            <div id="buttons">
+                <button id="buttonYourLikes" onclick="createLikedCards()">Your Likes</button>
+            </div>
         </header>
 
+        <section id="yourLikes">
+            <h2>YOUR LIKES</h2>
+        </section>
         <section id="stories">
             <h2>STORIES</h2>
         </section>
@@ -31,8 +38,11 @@
 <!-- scripts -->
 <script src="/js/cards.js"></script>
 <script src="/js/createCard.js"></script>
+<script src="/js/createLikedCards.js"></script>
+
 <script src="/js/viewCard.js"></script>
 <script src="/js/returnCard.js"></script>
 <script src="/js/search.js"></script>
+<script src="/js/toLike.js"></script>
 </body>
 </html>

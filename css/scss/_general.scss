@@ -6,7 +6,6 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    background: $background-body;
 }
 
 #blackFilter {
@@ -21,6 +20,15 @@ body {
     opacity: 0;
     transition: opacity .3s;
 }
+#background {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $background-body;
+}
 
 main {
     box-sizing: border-box;
@@ -28,7 +36,13 @@ main {
     max-width: 500px;
     min-height: 100vh;
     padding: 30px;
-    // border: solid 1px white;
+}
+
+section {
+    margin-bottom: 40px;
+    h2 {
+        margin-bottom: 20px;
+    }
 }
 
 h2 {

@@ -34,8 +34,20 @@ input#search {
     }
 }
 
-#stories {
-    h2 {
-        margin-bottom: 20px;
+#buttons {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    #buttonYourLikes {
+        background: rgba($red-bright, .5);
+        box-shadow: none;
+        transition-duration: .3s;
     }
+    #buttonYourLikes.active {
+        background: $red-bright;
+        box-shadow: 0 0 8px $red-bright;
+    }
+}
+
+#yourLikes {
+    display: none;
 }

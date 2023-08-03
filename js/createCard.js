@@ -15,7 +15,7 @@ function createCard(cardId) {
             <div class="frontSide">
                 <div class="cardHead">
                     <h3>${card.title}</h3>
-                    <img class="imgHeart" src="/images/heart.svg" alt="heart" />
+                    <img class="imgHeart" onclick="toLike(event)" src="${card.likedByUser ? '/images/fullHeart.svg' : '/images/heart.svg'}" alt="heart" />
                 </div>
                 <img class="imgQuestion" src="${card.imgQuestion}" alt="${card.descriptionImgQuestion}" />
                 <p class="textQuestion">${card.question}</p>
@@ -45,7 +45,7 @@ function createCard(cardId) {
                 <img class="imgQuestion" src="${card.imgQuestion}" alt="${card.descriptionImgQuestion}" />
                 <div class="cardHead">
                     <h3>${card.title}</h3>
-                    <img class="imgHeart" src="/images/heart.svg" alt="heart" />
+                    <img class="imgHeart" onclick="toLike(event)" src="${card.likedByUser ? '/images/fullHeart.svg' : '/images/heart.svg'}" alt="heart" />
                 </div>
                 <img class="imgSolution" src="${card.imgSolution}" alt="${card.descriptionImgSolution}" />
                 <p class="textSolution">${card.solution}</p>

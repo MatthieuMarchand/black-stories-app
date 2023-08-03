@@ -1,5 +1,5 @@
 class Card {
-    constructor(title, id, question, imgQuestion, descriptionImgQuestion, hints, solution, imgSolution, descriptionImgSolution) {
+    constructor(title, id, question, imgQuestion, descriptionImgQuestion, hints, solution, imgSolution, descriptionImgSolution, likedByUser) {
         this.title = title;
         this.id = id;
         this.question = question;
@@ -9,6 +9,7 @@ class Card {
         this.solution = solution;
         this.imgSolution = imgSolution;
         this.descriptionImgSolution = descriptionImgSolution;
+        this.likedByUser = likedByUser;
     }
 }
 
@@ -22,7 +23,8 @@ const cardDatabase = [
         ["Deadly poison in the chalice.", "Late-night experiment with toxic substances.", "Faulty ventilation caused deadly fumes."],
         "The scientist mixed lethal chemicals in the chalice during his late-night experiment. The faulty ventilation system filled the room with deadly fumes, causing his tragic death.",
         "/images/laboratoire.png",
-        "laboratoire"
+        "laboratoire",
+        false
     ),
     new Card(
         "The Vanishing Act",
@@ -33,7 +35,8 @@ const cardDatabase = [
         ["Hat and wand left on stage.", "Financial troubles and risk of bankruptcy.", "Escape through secret workshop passage."],
         "Overwhelmed by financial troubles, the magician planned an escape. He vanished through a secret passage in his workshop while the audience was distracted by smoke, leaving his hat and wand as part of the illusion.",
         "/images/light.png",
-        "light"
+        "light",
+        false
     ),
     new Card(
         "The Unseen Sniper",
@@ -44,7 +47,8 @@ const cardDatabase = [
         ["Unique alloy bullet.", "Cryptic message with political motive.", "High vantage point disguised as a construction worker."],
         "The sniper, disguised as a construction worker, used a unique alloy bullet to kill the politician. The cryptic message was a distraction, and the shot came from a high vantage point.",
         "/images/politician.png",
-        "politician"
+        "politician",
+        false
     ),
     new Card(
         "The Silent Symphony",
@@ -55,7 +59,8 @@ const cardDatabase = [
         ["Missing baton.", "Traces of deadly poison on clothing.", "Greeting someone backstage before the performance."],
         "The conductor was poisoned before performing. During the performance, he noticed the missing baton and went backstage, where the poison took effect, causing his silent death.",
         "/images/poison.png",
-        "poison"
+        "poison",
+        false
     ),
     new Card(
         "The Missing Heirloom",
@@ -66,7 +71,8 @@ const cardDatabase = [
         ["Traces of a powdery substance.", "Nervous cousin with sleight-of-hand skills.", "Old photograph showing the heirloom before it vanished."],
         "The cousin used powder to see fingerprints, performed sleight-of-hand tricks to lift fingerprints, and made a replica key to unlock the display case. He swapped the original heirloom with a duplicate.",
         "/images/magician-illusionist.png",
-        "magician"
+        "magician",
+        false
     ),
     new Card(
         "The Haunted Manor",
@@ -77,6 +83,7 @@ const cardDatabase = [
         ["Victim's frozen face in terror.", "Eerie sounds and temperature drop.", "Hidden passage to secret underground room."],
         "The victim was murdered by one of the friends who used the haunted legend to distract. The murderer accessed the victim's room through the hidden passage, creating an illusion of haunting to cause a fatal fright.",
         "/images/people.webp",
-        "people"
+        "people",
+        false
     )
 ];

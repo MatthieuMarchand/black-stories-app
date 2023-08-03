@@ -13,7 +13,6 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  background: linear-gradient(to bottom, #590000, #390909);
 }
 
 #blackFilter {
@@ -29,12 +28,29 @@ body {
   transition: opacity 0.3s;
 }
 
+#background {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #590000, #390909);
+}
+
 main {
   box-sizing: border-box;
   width: 100vw;
   max-width: 500px;
   min-height: 100vh;
   padding: 30px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+section h2 {
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -89,8 +105,22 @@ input#search {
   height: 18px;
 }
 
-#stories h2 {
-  margin-bottom: 20px;
+#buttons {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+#buttons #buttonYourLikes {
+  background: rgba(255, 68, 57, 0.5);
+  box-shadow: none;
+  transition-duration: 0.3s;
+}
+#buttons #buttonYourLikes.active {
+  background: #FF4439;
+  box-shadow: 0 0 8px #FF4439;
+}
+
+#yourLikes {
+  display: none;
 }
 
 .card {
@@ -101,7 +131,7 @@ input#search {
 .card.open {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 450px;
   margin-top: 15px;
   font-size: 14px;
   color: #FFFAFA;
@@ -145,6 +175,7 @@ input#search {
 }
 .card.open .imgHeart {
   height: 20px;
+  transition-duration: 0.3s;
 }
 .card.open ul {
   display: flex;
@@ -152,8 +183,9 @@ input#search {
 }
 .card.open ul li {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+  font-size: 12px;
   perspective: 500px;
 }
 .card.open ul li .hintFrontSide, .card.open ul li .hintBackSide {
@@ -224,21 +256,20 @@ input#search {
   border-bottom-left-radius: 10px;
 }
 .card.closed .backSide .imgQuestion {
-  max-width: 65px;
-  max-height: 55;
-  width: 100%;
-  height: 100%;
+  height: 55px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .card.closed .cardHead h3 {
   font-size: 20px;
 }
-.card.closed *:not(.backSide, .backSide .imgQuestion, .frontSide, .frontSide .cardHead, .frontSide .cardHead h3, .textQuestion) {
+.card.closed *:not(.backSide, .backSide .imgQuestion, .frontSide, .frontSide .cardHead, .frontSide .cardHead h3) {
   display: none;
 }
 
 .card.visible {
   width: 100%;
-  height: 280px;
+  height: 300px;
   margin-top: 15px;
   font-size: 14px;
   color: #FFFAFA;
@@ -269,6 +300,7 @@ input#search {
 }
 .card.visible .imgHeart {
   height: 20px;
+  transition-duration: 0.3s;
 }
 .card.visible .imgQuestion {
   order: 1;

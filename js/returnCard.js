@@ -1,5 +1,5 @@
-function returnCard(button) {
-    const card = button.closest(".card");
+function returnCard(event) {
+    const card = event.closest(".card");
     const frontSide = card.querySelector(".frontSide");
     const backSide = card.querySelector(".backSide");
 

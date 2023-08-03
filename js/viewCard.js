@@ -1,4 +1,5 @@
 let card;
+const cardWidth = document.querySelector(".visible").offsetWidth + "px";
 const blackFilter = document.getElementById("blackFilter");
 
 function outsideClickHandler(event) {
@@ -19,7 +20,7 @@ function viewCard(e) {
     card = createCard(e.closest(".card").dataset.id);
     card.classList.remove("visible", "closed");
     card.classList.add("open");
-    card.style.width = document.querySelector(".card").offsetWidth + "px";
+    card.style.width = cardWidth;
     card.style.position = "fixed";
     card.style.zIndex = "2";
     card.style.top = "100%";
