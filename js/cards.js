@@ -28,7 +28,7 @@ const cardDatabase = [
         "The Vanishing Act",
         "2",
         "A famous magician performs 'The Vanishing Act' in front of a live audience. As the smoke clears, he disappears without a trace. How did he vanish?",
-        "/images/magician-hat.webp",
+        "/images/magician-hat.png",
         "magician hat",
         ["Hat and wand left on stage.", "Financial troubles and risk of bankruptcy.", "Escape through secret workshop passage."],
         "Overwhelmed by financial troubles, the magician planned an escape. He vanished through a secret passage in his workshop while the audience was distracted by smoke, leaving his hat and wand as part of the illusion.",
@@ -50,7 +50,7 @@ const cardDatabase = [
         "The Silent Symphony",
         "4",
         "A world-renowned conductor is found dead on stage before his performance. No murder weapon, and everyone heard nothing. How did the conductor die?",
-        "/images/conductor.png",
+        "/images/conductor.webp",
         "conductor",
         ["Missing baton.", "Traces of deadly poison on clothing.", "Greeting someone backstage before the performance."],
         "The conductor was poisoned before performing. During the performance, he noticed the missing baton and went backstage, where the poison took effect, causing his silent death.",
@@ -65,7 +65,7 @@ const cardDatabase = [
         "coffre fort",
         ["Traces of a powdery substance.", "Nervous cousin with sleight-of-hand skills.", "Old photograph showing the heirloom before it vanished."],
         "The cousin used powder to see fingerprints, performed sleight-of-hand tricks to lift fingerprints, and made a replica key to unlock the display case. He swapped the original heirloom with a duplicate.",
-        "/images/magician-illusionist.jpg",
+        "/images/magician-illusionist.png",
         "magician"
     ),
     new Card(
